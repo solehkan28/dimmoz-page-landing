@@ -20,7 +20,35 @@
   <meta property="og:image" content="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754450142/dimsum_mixthumbnail_seqvai.jpg" />
   <meta property="og:url" content="https://dimmoz.mozzadotaidi.store/" />
   <meta property="og:type" content="website" />
+  <meta name="color-scheme" content="light">
 
+<style>
+  /* Paksa semua elemen pake warna yang kita tentukan, bukan bawaan sistem */
+  :root {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #fffaf5 !important; /* Paksa warna krem muda */
+    color: #333 !important; /* Paksa teks warna gelap */
+  }
+
+  .menu-item, .about, .testi-card {
+    background-color: #ffffff !important;
+    color: #333 !important;
+  }
+
+  /* Biar teks di header tetep putih meskipun mode gelap */
+  header h1, header p, .btn-order {
+    color: #ffffff !important;
+  }
+  
+  /* Mencegah input atau elemen lain berubah jadi item kusam */
+  * {
+    border-color: rgba(0,0,0,0.1) !important;
+  }
+</style>
+  
   <style>
     body {
       font-family: 'Quicksand', sans-serif;
