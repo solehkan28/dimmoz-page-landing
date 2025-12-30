@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17707954708"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17707954708"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17707954708');
+  </script>
 
-  gtag('config', 'AW-17707954708');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dimsum Mozza - Fresh & Halal Taman Sidoarjo</title>
+  <title>Dimsum Mozza - Full Daging & Juicy Taman Sidoarjo</title>
   
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Open Graph (Facebook, WhatsApp, LinkedIn, dll) -->
-  <meta property="og:title" content="Dimsum Mozza - Fresh & Frozen" />
-  <meta property="og:description" content="Dimsum homemade dari Taman Sidoarjo. Tanpa pengawet, halal dan enak!" />
+  <meta property="og:title" content="Dimsum Mozza - Full Daging & Juicy" />
+  <meta property="og:description" content="Dimsum homemade rasa resto di Taman Sidoarjo. Tanpa pengawet, halal, dan beneran daging!" />
   <meta property="og:image" content="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754450142/dimsum_mixthumbnail_seqvai.jpg" />
   <meta property="og:url" content="https://dimmoz.mozzadotaidi.store/" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dimsum Mozza - Dimsum Homemade Halal Taman Sidoarjo" />
-  <meta name="twitter:description" content="Dimsum fresh & halal dari Taman Sidoarjo. Tanpa pengawet, rasa resto! Bisa pesan harian & frozen via WhatsApp." />
-  <meta name="twitter:image" content="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754450142/dimsum_mixthumbnail_seqvai.jpg" />
 
   <style>
     body {
@@ -40,174 +31,204 @@
     }
     header {
       background: linear-gradient(135deg, #ff9966, #ff5e62);
-      padding: 2.5rem;
+      padding: 4rem 1rem 5rem;
       text-align: center;
       color: white;
-      border-bottom-left-radius: 30% 10%;
-      border-bottom-right-radius: 30% 10%;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
     }
-    header h1 { font-size: 2.8rem; margin: 0; }
-    header p { margin-top: 0.5rem; font-size: 1.2rem; }
+    header h1 { font-size: 3rem; margin: 0; font-weight: 700; }
+    header .tagline { margin-top: 0.5rem; font-size: 1.2rem; opacity: 0.9; }
+    header .highlight { 
+      background: #fff; 
+      color: #ff5e62; 
+      display: inline-block; 
+      padding: 6px 18px; 
+      border-radius: 25px; 
+      font-weight: bold; 
+      margin-top: 15px;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Video Section */
+    .video-container {
+      max-width: 600px;
+      margin: -60px auto 40px;
+      padding: 0 1.2rem;
+    }
+    .video-box {
+      background: #000;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      line-height: 0;
+    }
+    video { width: 100%; height: auto; display: block; }
+
+    .section-title { text-align: center; margin: 2rem 0 1rem; font-weight: 700; color: #d35400; font-size: 1.8rem; }
 
     .menu {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
-      padding: 2rem;
+      padding: 1rem 2rem;
     }
     .menu-item {
       background: white;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      padding: 1rem;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 1.2rem;
       text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
+      transition: 0.3s;
     }
-    .menu-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-    }
+    .menu-item:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
     .menu-item img {
       width: 100%;
-      height: 220px;
+      height: 250px;
       object-fit: cover;
-      border-radius: 12px;
-      cursor: pointer;
-      transition: transform 0.3s;
+      border-radius: 20px;
     }
-    .menu-item img:hover { transform: scale(1.05); }
-    .menu-item h3 { margin: 0.8rem 0 0.4rem; font-size: 1.2rem; }
-    .menu-item p {
-      font-size: 1rem;
-      background: #ffebcd;
+    .price-tag {
+      font-size: 1.1rem;
+      background: #fff4e6;
       display: inline-block;
-      padding: 0.3rem 0.8rem;
-      border-radius: 8px;
+      padding: 6px 16px;
+      border-radius: 12px;
       font-weight: bold;
-      color: #d35400;
+      color: #e67e22;
+      margin-top: 12px;
     }
 
-    .order {
+    /* Testimonials */
+    .testimonials {
+      background: #ffeaa7;
+      padding: 4rem 1.5rem;
+      margin-top: 3rem;
       text-align: center;
-      padding: 3rem 2rem;
     }
-    .order h2 { margin-bottom: 1rem; }
+    .testi-card {
+      background: white;
+      max-width: 550px;
+      margin: 15px auto;
+      padding: 25px;
+      border-radius: 20px;
+      font-style: italic;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      position: relative;
+    }
+
+    .order-box {
+      text-align: center;
+      padding: 5rem 1rem;
+      background: white;
+    }
     .btn-order {
-      background: #ff6f61;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.2rem;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      transition: background 0.3s, transform 0.2s;
-    }
-    .btn-order:hover {
-      background: #e85a4f;
-      transform: scale(1.05);
-    }
-
-    .about, .contact {
-      padding: 2.5rem;
-      margin: 2rem;
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      text-align: center;
-    }
-
-    footer {
-      background: #444;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-
-    /* Floating WhatsApp Button */
-    .wa-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
       background: #25d366;
       color: white;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.2s;
-      z-index: 999;
+      padding: 1.3rem 3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.4rem;
+      display: inline-block;
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+      transition: 0.3s;
     }
-    .wa-float:hover { transform: scale(1.1); background: #20b358; }
+    .btn-order:hover { transform: scale(1.05); background: #20b358; }
+
+    .about {
+      padding: 3rem 2rem;
+      background: #fff;
+      margin: 2rem;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+
+    footer { background: #333; color: white; text-align: center; padding: 2.5rem; font-size: 0.9rem; }
+    
+    .wa-float {
+      position: fixed; width: 65px; height: 65px; bottom: 25px; right: 25px;
+      background: #25d366; color: white; border-radius: 50%; text-align: center;
+      font-size: 2.2rem; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3); z-index: 999; text-decoration: none;
+    }
   </style>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17707954708">
-  </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'AW-17707954708');
-  </script>
 </head>
 <body>
 
   <header>
     <h1>Dimsum Mozza</h1>
-    <p>Dimsum Homemade, Rasa Resto – Fresh & Frozen, Halal & Tanpa Pengawet</p>
-    <p>Rasakan sensasi dimsum full daging yang juicy di setiap gigitan. Bukan sekedar tepung!</p>
+    <p class="tagline">Homemade di Taman, Sidoarjo – Fresh & Tanpa Pengawet</p>
+    <div class="highlight">✨ FULL DAGING & JUICY DI SETIAP GIGITAN ✨</div>
   </header>
 
+  <div class="video-container">
+    <div class="video-box">
+      <video autoplay muted loop playsinline poster="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754450142/dimsum_mixthumbnail_seqvai.jpg">
+        <source src="https://res.cloudinary.com/dhgjmluzg/video/upload/f_auto,q_auto/v1767082483/tutotrial-makan-dimsum_nbqs1n.mp4" type="video/mp4">
+        Video Dimsum Mozza Juicy
+      </video>
+    </div>
+    <p style="text-align: center; font-size: 0.95rem; color: #884400; margin-top: 15px; font-weight: 600;">
+      "Bukan sekedar tepung, ini beneran daging!" 🥟🔥
+    </p>
+  </div>
+
+  <h2 class="section-title">Menu Favorit</h2>
   <section class="menu">
     <div class="menu-item">
       <img src="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754441299/dimsum_1mix_rk3hiv.jpg" alt="Dimsum Mix" />
-      <h3>Dimsum Mix</h3>
-      <p>Rp25.000 / pack (isi 6)</p>
-    </div>
-    <div class="menu-item">
-      <img src="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754441317/dimsum_2ori_tdfkas.jpg" alt="Dimsum Original" />
-      <h3>Dimsum Original</h3>
-      <p>Rp20.000 / pack (isi 6)</p>
+      <h3>Dimsum Mix (Best Seller)</h3>
+      <div class="price-tag">Rp25.000 / pack (6 pcs)</div>
     </div>
     <div class="menu-item">
       <img src="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754441333/dimsum_3mentai_ulnk2r.jpg" alt="Dimsum Mentai" />
       <h3>Dimsum Mentai</h3>
-      <p>Rp25.000 / pack (isi 6)</p>
+      <div class="price-tag">Rp25.000 / pack (6 pcs)</div>
     </div>
     <div class="menu-item">
       <img src="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754441351/dimsum_4tartar_l8zon3.jpg" alt="Dimsum Tar Tar" />
       <h3>Dimsum Tar Tar</h3>
-      <p>Rp27.000 / pack (isi 6)</p>
+      <div class="price-tag">Rp27.000 / pack (6 pcs)</div>
+    </div>
+    <div class="menu-item">
+      <img src="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754441317/dimsum_2ori_tdfkas.jpg" alt="Dimsum Original" />
+      <h3>Dimsum Original</h3>
+      <div class="price-tag">Rp20.000 / pack (6 pcs)</div>
     </div>
   </section>
 
-  <section class="order">
-    <h2>Pesan Sekarang!</h2>
-    <a href="https://wa.me/6282229474264" target="_blank" class="btn-order">📱 Order via WhatsApp</a>
+  <section class="testimonials">
+    <h2 style="margin-bottom: 2rem; font-weight: 700;">Kata Pelanggan Kami</h2>
+    <div class="testi-card">
+      "Sumpah ini dimsum terjujur, dagingnya padet banget dan juicy pas digigit!" - <b>Rina, Sidoarjo</b>
+    </div>
+    <div class="testi-card">
+      "Mentai-nya juara, anak-anak langsung ludes makan ini buat camilan sore." - <b>Bunda Alif</b>
+    </div>
+    <div class="testi-card">
+      "Udah langganan buat stok frozen di kulkas. Rasa restonya dapet banget!" - <b>Andika, Taman</b>
+    </div>
   </section>
 
   <section class="about">
-    <h2>Tentang Kami</h2>
-    <p>Dimsum Mozza adalah usaha rumahan dari Taman, Sidoarjo yang menyajikan dimsum halal, tanpa pengawet, dan selalu fresh! Kami menerima pesanan harian dan frozen untuk stok di rumah.</p>
+    <h2>Tentang Dimsum Mozza</h2>
+    <p>Kami menyajikan dimsum kualitas resto yang dibuat secara homemade di Taman, Sidoarjo. Fokus kami adalah kualitas bahan: menggunakan daging pilihan sehingga menghasilkan tekstur yang padat dan juicy tanpa bahan pengawet.</p>
   </section>
 
-  <section class="contact">
-    <h2>Lokasi</h2>
-    <p>Taman Sidoarjo, Kirim via GoSend & COD area terdekat</p>
+  <section class="order-box">
+    <h2>Sudah Ngiler?</h2>
+    <p>Yuk pesan sekarang sebelum kehabisan slot hari ini!</p><br>
+    <a href="https://wa.me/6282229474264?text=Halo%20Dimmoz%2C%20saya%20mau%20order%20Dimsum%20Full%20Dagingnya%20dong!%0A%0AMenu%3A%0AJumlah%3A%0AAlamat%3A" target="_blank" class="btn-order">📱 Pesan Via WhatsApp</a>
   </section>
 
   <footer>
-    &copy; 2025 Dimsum Mozza. Homemade with ❤️ in Sidoarjo.
+    <p><b>Dimsum Mozza - Sidoarjo</b><br>Kirim via GoSend, GrabExpress, atau COD area terdekat.</p>
+    &copy; 2025 Dimsum Mozza. Homemade with ❤️
   </footer>
 
-  <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/6282229474264" class="wa-float" target="_blank">💬</a>
 
 </body>
