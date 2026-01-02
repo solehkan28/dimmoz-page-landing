@@ -211,11 +211,14 @@
   </header>
 
   <div class="video-container">
-    <div class="video-box">
-      <video autoplay muted loop playsinline poster="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754450142/dimsum_mixthumbnail_seqvai.jpg" style="width: 100%; height: auto; display: block;">
+    <div class="video-box" style="position: relative;">
+      <video id="myVideo" autoplay muted loop playsinline poster="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754450142/dimsum_mixthumbnail_seqvai.jpg">
         <source src="https://res.cloudinary.com/dhgjmluzg/video/upload/f_auto:video,q_auto:best/v1767084337/tutorial-makan-dimsum-original-file_aots3t.mp4" type="video/mp4">
-        Your browser does not support the video tag.
       </video>
+      
+      <button id="unmuteBtn" onclick="toggleMute()" style="position: absolute; bottom: 15px; right: 15px; background: rgba(0,0,0,0.6); border: none; color: white; padding: 8px 12px; border-radius: 50px; cursor: pointer; font-size: 0.8rem; display: flex; align-items: center; gap: 5px; z-index: 10;">
+        <span id="muteIcon">🔇</span> <span id="muteText">Aktifkan Suara</span>
+      </button>
     </div>
     <p style="text-align: center; font-size: 0.95rem; color: #884400; margin-top: 15px; font-weight: 600;">
       "Bukan sekedar tepung, ini beneran daging!" 🥟🔥
@@ -314,6 +317,22 @@
   </footer>
 
   <a href="https://wa.me/6282229474264" class="wa-float" target="_blank">💬</a>
+<script>
+  function toggleMute() {
+    var video = document.getElementById("myVideo");
+    var btnText = document.getElementById("muteText");
+    var btnIcon = document.getElementById("muteIcon");
 
+    if (video.muted) {
+      video.muted = false;
+      btnText.innerHTML = "Matikan Suara";
+      btnIcon.innerHTML = "🔊";
+    } else {
+      video.muted = true;
+      btnText.innerHTML = "Aktifkan Suara";
+      btnIcon.innerHTML = "🔇";
+    }
+  }
+</script>
 </body>
 </html>
