@@ -232,21 +232,30 @@
     /* WA FLOAT */
     .wa-float {
         position: fixed;
-        width: 65px;
-        height: 65px;
         bottom: 22px;
         right: 22px;
+        z-index: 999;
+      
+        /* ikut btn-order */
         background: #25d366;
         color: #fff;
-        border-radius: 50%;
+        padding: 1.1rem 1.6rem;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1rem;
+        text-decoration: none;
+      
+        box-shadow: 0 8px 25px rgba(37,211,102,0.35);
+        transition: 0.3s ease;
+      
         display: flex;
         align-items: center;
-        justify-content: center;
-        font-size: 2.2rem;
-        text-decoration: none;
-        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
-        z-index: 999;
-        animation: pulseWA 1.8s infinite;
+        gap: 10px;
+      }
+      
+      .wa-float:hover {
+        transform: scale(1.05);
+        background: #20b358;
       }
       
       @keyframes pulseWA {
@@ -255,28 +264,28 @@
         100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
       }
 
-     .wa-sticky {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(135deg, #25d366, #1ebe5d);
-  color: #fff;
-  padding: 14px 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  font-weight: 700;
-  font-size: 1.05rem;
-  z-index: 998;
-  transform: translateY(100%);
-  transition: transform 0.4s ease;
-}
-
-.wa-sticky.show {
-  transform: translateY(0);
-}
+    .wa-sticky {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     background: #ffffff;
+     padding: 14px 16px;
+     box-shadow: 0 -6px 20px rgba(0,0,0,0.12);
+     z-index: 998;
+   
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 14px;
+   
+     transform: translateY(100%);
+     transition: transform 0.4s ease;
+   }
+   
+   .wa-sticky.show {
+     transform: translateY(0);
+   }
 
 .wa-sticky a {
   background: #fff;
@@ -393,12 +402,22 @@
          &copy; 2025 Dimsum Mozza. Homemade with ❤️ 
       </footer>
       <a href="https://wa.me/6282229474264" class="wa-float" target="_blank">💬</a> <script> function toggleMute() { var video = document.getElementById("myVideo"); var btnText = document.getElementById("muteText"); var btnIcon = document.getElementById("muteIcon"); if (video.muted) { video.muted = false; btnText.innerHTML = "Matikan Suara"; btnIcon.innerHTML = "🔊"; } else { video.muted = true; btnText.innerHTML = "Aktifkan Suara"; btnIcon.innerHTML = "🔇"; } } </script> 
-      <div class="wa-sticky" id="waSticky">
-        🥟 Lapar? Dimsum Full Daging Siap Kirim!
-        <a href="https://wa.me/6282229474264?text=Halo%20Dimmoz%2C%20saya%20mau%20order%20dimsum%20hari%20ini"
-           target="_blank">
-          ORDER VIA WA
-        </a>
-      </div>
+     <div class="wa-sticky" id="waSticky">
+  <div style="line-height:1.2;">
+    <div style="font-weight:700;color:#333;">
+      🥟 Dimsum Full Daging
+    </div>
+    <div style="font-size:0.85rem;color:#e74c3c;">
+      ⚠️ Stok terbatas hari ini
+    </div>
+  </div>
+
+  <a href="https://wa.me/6282229474264?text=Halo%20Dimmoz%2C%20saya%20mau%20order%20dimsum%20hari%20ini%20sebelum%20kehabisan"
+     class="btn-order"
+     target="_blank"
+     style="font-size:1rem;padding:0.8rem 1.8rem;">
+    Order Sekarang
+  </a>
+</div>
    </body>
 </html>
