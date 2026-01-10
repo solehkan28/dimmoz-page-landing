@@ -3,17 +3,6 @@
    <head>
       <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17707954708"></script>
       <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17707954708'); </script>
-      <script>
-        const waSticky = document.getElementById("waSticky");
-      
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > 400) {
-            waSticky.classList.add("show");
-          } else {
-            waSticky.classList.remove("show");
-          }
-        });
-      </script>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Dimsum Mozza - Full Daging & Juicy Taman Sidoarjo</title>
@@ -52,6 +41,7 @@
       margin: 0;
       padding: 0;
       line-height: 1.6;
+      padding-bottom: 80px;
     }
 
     /* HEADER */
@@ -281,6 +271,7 @@
    
      transform: translateY(100%);
      transition: transform 0.4s ease;
+     padding-bottom: env(safe-area-inset-bottom);
    }
    
    .wa-sticky.show {
@@ -419,5 +410,19 @@
     Order Sekarang
   </a>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const waSticky = document.getElementById("waSticky");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        waSticky.classList.add("show");
+      } else {
+        waSticky.classList.remove("show");
+      }
+    });
+  });
+</script>
    </body>
 </html>
