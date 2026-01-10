@@ -14,37 +14,6 @@
       <meta name="color-scheme" content="light">
       <style> /* Paksa semua elemen pake warna yang kita tentukan, bukan bawaan sistem */ :root { color-scheme: light; } body { background-color: #fffaf5 !important; /* Paksa warna krem muda */ color: #333 !important; /* Paksa teks warna gelap */ } .menu-item, .about, .testi-card { background-color: #ffffff !important; color: #333 !important; } /* Biar teks di header tetep putih meskipun mode gelap */ header h1, header p, .btn-order { color: #ffffff !important; } /* Mencegah input atau elemen lain berubah jadi item kusam */ * { border-color: rgba(0,0,0,0.1) !important; } </style>
       <style>
-         /* ===============================
-         DESKTOP WIDTH CONTROL (SAFE)
-         =============================== */
-      @media (min-width: 1024px) {
-      
-        /* MENU */
-        .menu {
-          max-width: 1100px;
-          margin-left: auto;
-          margin-right: auto;
-          padding-left: 0;
-          padding-right: 0;
-        }
-      
-        /* TESTIMONI — TETAP GRID ASLI */
-        .testimonials > div {
-          max-width: 1100px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      
-        /* SECTION LAIN */
-        .about,
-        .order-box,
-        .location > div {
-          max-width: 1100px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-      }
-
          /* Reset dasar agar konsisten di semua browser */ * { box-sizing: border-box; } body { font-family: 'Quicksand', sans-serif; margin: 0; padding: 0; background: #fffaf5; /* Warna krem di mode terang */ color: #333; line-height: 1.6; } /* Biar di Browser Samsung/HP China warna tetep enak dilihat */ @media (prefers-color-scheme: dark) { body { background: #1a1a1a; color: #f0f0f0; } .menu-item, .about, .testi-card { background: #2d2d2d !important; color: #fff !important; box-shadow: 0 5px 15px rgba(0,0,0,0.3) !important; } .price-tag { background: #444 !important; color: #ff9966 !important; } .section-title { color: #ff9966; } header { background: linear-gradient(135deg, #d35400, #c0392b); } } /* Gaya Header & Elemen lainnya (Tetap Sama) */ header { background: linear-gradient(135deg, #ff9966, #ff5e62); padding: 4rem 1rem 5rem; text-align: center; color: white; border-bottom-left-radius: 50px; border-bottom-right-radius: 50px; } header h1 { font-size: 3rem; margin: 0; font-weight: 700; } header .tagline { margin-top: 0.5rem; font-size: 1.2rem; opacity: 0.9; } header .highlight { background: #fff; color: #ff5e62; display: inline-block; padding: 6px 18px; border-radius: 25px; font-weight: bold; margin-top: 15px; font-size: 0.9rem; box-shadow: 0 4px 10px rgba(0,0,0,0.1); } /* Video Section */ .video-container { max-width: 400px; /* Ukuran paling pas buat video portrait biar tetep padat pixelnya */ margin: -60px auto 40px; padding: 0 1.2rem; } .video-box { background: #000; border-radius: 25px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.2); line-height: 0; } video { width: 100%; height: auto; display: block; } .section-title { text-align: center; margin: 2rem 0 1rem; font-weight: 700; color: #d35400; font-size: 1.8rem; } .menu { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; padding: 1rem 2rem; } .menu-item { background: white; border-radius: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); padding: 1.2rem; text-align: center; transition: 0.3s; } .menu-item:hover { transform: translateY(-8px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); } .menu-item img { width: 100%; height: 250px; object-fit: cover; border-radius: 20px; } .price-tag { font-size: 1.1rem; background: #fff4e6; display: inline-block; padding: 6px 16px; border-radius: 12px; font-weight: bold; color: #e67e22; margin-top: 12px; } /* Testimonials */ .testimonials { background: #ffeaa7; padding: 4rem 1.5rem; margin-top: 3rem; text-align: center; } .testi-card { background: white; max-width: 550px; margin: 15px auto; padding: 25px; border-radius: 20px; font-style: italic; box-shadow: 0 5px 15px rgba(0,0,0,0.05); position: relative; } .order-box { text-align: center; padding: 5rem 1rem; background: white; } .btn-order { background: #25d366; color: white; padding: 1.3rem 3rem; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 1.4rem; display: inline-block; box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); transition: 0.3s; } .btn-order:hover { transform: scale(1.05); background: #20b358; } .about { padding: 3rem 2rem; background: #fff; margin: 2rem; border-radius: 25px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.03); } footer { background: #333; color: white; text-align: center; padding: 2.5rem; font-size: 0.9rem; } .wa-float { position: fixed; width: 65px; height: 65px; bottom: 25px; right: 25px; background: #25d366; color: white; border-radius: 50%; text-align: center; font-size: 2.2rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 20px rgba(0,0,0,0.3); z-index: 999; text-decoration: none; }
       </style>
    </head>
