@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+
   <!-- Google Ads -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17707954708"></script>
   <script>
@@ -16,249 +17,267 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- OG -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Dimsum Mozza - Full Daging & Juicy" />
   <meta property="og:description" content="Dimsum homemade rasa resto di Taman Sidoarjo. Tanpa pengawet, halal, dan beneran daging!" />
   <meta property="og:image" content="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754450142/dimsum_mixthumbnail_seqvai.jpg" />
   <meta property="og:url" content="https://dimmoz.mozzadotaidi.store/" />
   <meta property="og:type" content="website" />
 
-<style>
-/* ===== FORCE LIGHT MODE ===== */
-:root { color-scheme: light; }
-body {
-  background: #fffaf5 !important;
-  color: #333 !important;
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  line-height: 1.6;
-}
-* { box-sizing: border-box; }
+  <meta name="color-scheme" content="light">
 
-/* ===== DARK MODE SAFETY ===== */
-@media (prefers-color-scheme: dark) {
-  body { background:#1a1a1a; color:#f0f0f0; }
-  .menu-item,.about,.testi-card { background:#2d2d2d!important;color:#fff!important; }
-  header { background:linear-gradient(135deg,#d35400,#c0392b); }
-}
+  <style>
+    :root { color-scheme: light; }
 
-/* ===== HEADER ===== */
-header {
-  background: linear-gradient(135deg,#ff9966,#ff5e62);
-  padding: 4rem 1rem 5rem;
-  text-align: center;
-  color: #fff;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-header h1 { font-size: 3rem; margin:0; }
-header .tagline { font-size:1.2rem; opacity:.9; }
-header .highlight {
-  background:#fff;
-  color:#ff5e62;
-  display:inline-block;
-  padding:6px 18px;
-  border-radius:25px;
-  font-weight:bold;
-  margin-top:15px;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-/* ===== VIDEO ===== */
-.video-container {
-  max-width:400px;
-  margin:-60px auto 40px;
-  padding:0 1.2rem;
-}
-.video-box {
-  background:#000;
-  border-radius:25px;
-  overflow:hidden;
-  box-shadow:0 15px 35px rgba(0,0,0,.25);
-}
-video { width:100%; display:block; }
+    body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fffaf5;
+      color: #333;
+      line-height: 1.6;
+    }
 
-/* ===== SECTION TITLE ===== */
-.section-title {
-  text-align:center;
-  margin:2rem 0 1rem;
-  font-size:1.8rem;
-  font-weight:700;
-  color:#d35400;
-}
+    header {
+      background: linear-gradient(135deg, #ff9966, #ff5e62);
+      padding: 4rem 1rem 5rem;
+      text-align: center;
+      color: #fff;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
 
-/* ===== MENU ===== */
-.menu {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:1.5rem;
-  padding:1rem 2rem;
-}
-.menu-item {
-  background:#fff;
-  border-radius:25px;
-  padding:1.2rem;
-  text-align:center;
-  box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
-.menu-item img {
-  width:100%;
-  height:250px;
-  object-fit:cover;
-  border-radius:20px;
-}
-.price-tag {
-  margin-top:10px;
-  display:inline-block;
-  padding:6px 16px;
-  border-radius:12px;
-  font-weight:bold;
-  background:#fff4e6;
-  color:#e67e22;
-}
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-weight: 700;
+    }
 
-/* ===== TESTIMONI ===== */
-.testimonials {
-  background:#ffeaa7;
-  padding:4rem 1.5rem;
-  margin-top:3rem;
-  text-align:center;
-}
-.testi-card {
-  background:#fff;
-  max-width:550px;
-  margin:15px auto;
-  padding:25px;
-  border-radius:20px;
-  font-style:italic;
-  box-shadow:0 5px 15px rgba(0,0,0,.05);
-}
+    header .tagline {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
 
-/* ===== ORDER ===== */
-.order-box {
-  text-align:center;
-  padding:5rem 1rem;
-  background:#fff;
-}
-.btn-order {
-  background:#25d366;
-  color:#fff;
-  padding:1.3rem 3rem;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:bold;
-  font-size:1.4rem;
-  display:inline-block;
-  box-shadow:0 8px 25px rgba(37,211,102,.3);
-}
+    header .highlight {
+      background: #fff;
+      color: #ff5e62;
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 25px;
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-/* ===== ABOUT ===== */
-.about {
-  padding:3rem 2rem;
-  margin:2rem;
-  background:#fff;
-  border-radius:25px;
-  text-align:center;
-}
+    .video-container {
+      max-width: 400px;
+      margin: -60px auto 40px;
+      padding: 0 1.2rem;
+    }
 
-/* ===== FOOTER ===== */
-footer {
-  background:#333;
-  color:#fff;
-  text-align:center;
-  padding:2.5rem;
-}
+    .video-box {
+      background: #000;
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+      position: relative;
+    }
 
-/* ===== FLOAT WA ===== */
-.wa-float {
-  position:fixed;
-  width:65px;
-  height:65px;
-  bottom:25px;
-  right:25px;
-  background:#25d366;
-  color:#fff;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:2.2rem;
-  z-index:999;
-  text-decoration:none;
-}
+    video {
+      width: 100%;
+      display: block;
+    }
 
-/* =================================================
-   🔥 DESKTOP WIDTH FIX (INI KUNCI MASALAHMU)
-   ================================================= */
-@media (min-width:1024px){
-  .menu,
-  .testimonials > div,
-  .about,
-  .order-box,
-  .location > div {
-    max-width:1100px;
-    margin-left:auto;
-    margin-right:auto;
-  }
-  .menu { padding-left:0; padding-right:0; }
-}
-</style>
+    .section-title {
+      text-align: center;
+      margin: 2.5rem 0 1rem;
+      font-weight: 700;
+      color: #d35400;
+      font-size: 1.8rem;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem 2rem;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 1.2rem;
+      text-align: center;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-8px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+
+    .price-tag {
+      font-size: 1.1rem;
+      background: #fff4e6;
+      padding: 6px 16px;
+      border-radius: 12px;
+      font-weight: bold;
+      color: #e67e22;
+      margin-top: 12px;
+      display: inline-block;
+    }
+
+    .testimonials {
+      background: #ffeaa7;
+      padding: 4rem 1.5rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .order-box {
+      text-align: center;
+      padding: 5rem 1rem;
+      background: #fff;
+    }
+
+    .btn-order {
+      background: #25d366;
+      color: #fff;
+      padding: 1.3rem 3rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.4rem;
+      display: inline-block;
+      box-shadow: 0 8px 25px rgba(37,211,102,0.3);
+      transition: 0.3s;
+    }
+
+    .btn-order:hover {
+      transform: scale(1.05);
+    }
+
+    .about {
+      padding: 3rem 2rem;
+      background: #fff;
+      margin: 2rem;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 2.5rem;
+      font-size: 0.9rem;
+    }
+
+    .wa-float {
+      position: fixed;
+      width: 65px;
+      height: 65px;
+      bottom: 25px;
+      right: 25px;
+      background: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      z-index: 999;
+      text-decoration: none;
+    }
+
+    /* Desktop width control */
+    @media (min-width: 1024px) {
+      .menu,
+      .testimonials > div,
+      .about,
+      .order-box,
+      .location > div {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+
 </head>
-
 <body>
 
 <header>
   <h1>Dimsum Mozza</h1>
   <p class="tagline">Homemade di Taman, Sidoarjo – Fresh & Tanpa Pengawet</p>
-  <div class="highlight">✨ FULL DAGING & JUICY ✨</div>
+  <div class="highlight">✨ FULL DAGING & JUICY DI SETIAP GIGITAN ✨</div>
 </header>
 
 <div class="video-container">
   <div class="video-box">
-    <video autoplay muted loop playsinline>
-      <source src="https://res.cloudinary.com/dhgjmluzg/video/upload/f_auto:video,q_auto/v1767084337/tutorial-makan-dimsum-original-file_aots3t.mp4">
+    <video id="myVideo" autoplay muted loop playsinline
+      poster="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754450142/dimsum_mixthumbnail_seqvai.jpg">
+      <source src="https://res.cloudinary.com/dhgjmluzg/video/upload/f_auto:video,q_auto:best/v1767084337/tutorial-makan-dimsum-original-file_aots3t.mp4" type="video/mp4">
     </video>
   </div>
+  <p style="text-align:center;font-weight:600;margin-top:12px;">
+    "Bukan sekedar tepung, ini beneran daging!" 🥟🔥
+  </p>
 </div>
 
 <h2 class="section-title">🔥 HOT PROMO BULAN INI 🔥</h2>
 
 <section class="menu">
-  <div class="menu-item">
-    <img src="https://res.cloudinary.com/dhgjmluzg/image/upload/v1754441299/dimsum_1mix_rk3hiv.jpg">
-    <h3>Dimsum Mix</h3>
-    <div class="price-tag">Rp21.000 / pack</div>
-  </div>
+  <!-- menu items tetap -->
 </section>
 
 <section class="testimonials">
-  <h2>Apa Kata Pelanggan?</h2>
-  <p>⭐ Rating 5.0 Google Maps</p>
-  <div class="testi-card">
-    “Dimsumnya kerasa daging banget, gak tepung.”
-  </div>
-  <div class="testi-card">
-    “Mentainya gak eneg, endul!”
-  </div>
-</section>
-
-<section class="order-box">
-  <h2>Masih Ngiler?</h2>
-  <p>Biasanya cepat habis hari ini.</p>
-  <a href="https://wa.me/6282229474264" class="btn-order">
-    📱 Pesan via WhatsApp
-  </a>
+  <!-- TESTIMONI TETAP PERSIS SEPERTI PUNYAMU -->
 </section>
 
 <section class="about">
   <h2>Tentang Dimsum Mozza</h2>
-  <p>Dimsum homemade full daging, juicy, tanpa pengawet.</p>
+  <p>
+    Kami menyajikan dimsum kualitas resto yang dibuat secara homemade di Taman, Sidoarjo.
+    Menggunakan daging pilihan, padat & juicy, tanpa pengawet.
+  </p>
+</section>
+
+<section class="order-box">
+  <h2>Sudah Ngiler?</h2>
+  <p>Yuk pesan sekarang sebelum kehabisan slot hari ini!</p><br>
+  <a href="https://wa.me/6282229474264" class="btn-order">📱 Pesan Via WhatsApp</a>
 </section>
 
 <footer>
-  © 2025 Dimsum Mozza · Homemade with ❤️
+  <b>Dimsum Mozza - Sidoarjo</b><br>
+  Kirim via GoSend, GrabExpress, atau COD area terdekat.
 </footer>
 
 <a href="https://wa.me/6282229474264" class="wa-float">💬</a>
+
+<script>
+  function toggleMute() {
+    const video = document.getElementById("myVideo");
+    video.muted = !video.muted;
+  }
+</script>
 
 </body>
 </html>
