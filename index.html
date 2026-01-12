@@ -281,23 +281,29 @@
   transform: translateY(0);
 }
 
-wa-icon {
+.wa-icon {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
+}
+
+.wa-icon svg {
+  display: block;
 }
 
 .wa-text {
-  line-height: 1.1;
   font-size: 0.95rem;
-  font-weight: 600;
+  line-height: 1.15;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .wa-text small {
   font-size: 0.7rem;
-  font-weight: 600;
-  color: #ff3b3b;
-  opacity: 1;
+  font-weight: 500;
+  margin-top: 1px;
+  line-height: 1.1;
 }
 
 @media (max-width: 480px) {
